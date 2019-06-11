@@ -1,0 +1,23 @@
+#grid
+{ display:grid; grid-template-columns:150px 1fr;padding-top:20px;}
+  
+ol
+{border-right:1px solid gray; padding-left:0;padding-right:15px;}
+
+a
+{ color:black;text-decoration:none;}
+
+body
+{text-align: center;}
+    
+h1
+{ font-size:45px; text-align: center; border-bottom:1px solid gray;padding-bottom: 20px;margin-bottom: 0;}
+    
+
+@media(max-width:800px) 
+{
+   #grid{ display:block;}
+  ol{border-right:none;}
+    h1{ border-bottom:none; }
+    
+}
