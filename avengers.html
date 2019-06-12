@@ -4,34 +4,51 @@
         <head>
               <title>ALL OF AVENGERS 어벤져스의 모든 것 </title><br>
 
- 
+
         </head>
 
 <link rel="stylesheet" href="style.css">
 
 
-<input type="button" value="night" onclick=
-"
-document.querySelector('body').style.backgroundColor='black';
-document.querySelector('body').style.color='white';">
 
-<input type="button" value="day" onclick=
-"
-document.querySelector('body').style.backgroundColor='white';
-document.querySelector('body').style.color='black';">
+<input type="button" value="night" onclick="
+var target = document.querySelector('body');
+if (this.value === 'night')  {
+target.style.backgroundColor='black';
+target.style.color='white';
+this.value ='day';
+
+var alist = document.querySelectorAll('a');
+var i = 0;
+while(i< alist.length){
+alist[i]. style.color = 'white';
+i = i + 1;}
+}
+
+else{
+target.style.backgroundColor='white';
+target.style.color='black';
+this.value ='night';
+
+var alist = document.querySelectorAll('a');
+var i = 0;
+while(i< alist.length){
+alist[i]. style.color = 'black';
+i = i + 1;}
+}
+
+">
 <body>
- 
-<H1><a href="avengers.html"> ALL OF AVENGERS</a></H1>
 
+<h1><a href="avengers.html"> ALL OF AVENGERS</a></h1>
 
-  
 <div id="grid">
 <ol>
 
   <A HREF="endgame.html" >AVENGERS ENDGAME</A><br>
   <A HREF="infinity war.html" >AVENGERS INFINITY WAR</A><br>
     <A HREF="age of ultron.html" >AVENGERS AGE OF ULTRON</A><br></ol>
-   
+
 <div>
 
   In theaters April 26, 2019! The Avengers take a final stand against Thanos in
@@ -75,5 +92,14 @@ document.querySelector('body').style.color='black';">
     as well as the eighth highest-grossing film of all time.</P>
     </div>
     </body>
+    <input type="button" value="night" onclick=
+    "
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';">
+
+    <input type="button" value="day" onclick=
+    "
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';">
 
 </html>

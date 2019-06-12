@@ -5,16 +5,33 @@
   <meta charset="UTF-8">
 </head>
 <link rel="stylesheet" href="style.css">
+<input type="button" value="night" onclick="
+var target = document.querySelector('body');
+if (this.value === 'night')  {
+target.style.backgroundColor='black';
+target.style.color='white';
+this.value ='day';
 
-<input type="button" value="night" onclick=
-"
-document.querySelector('body').style.backgroundColor='black';
-document.querySelector('body').style.color='white';">
+var alist = document.querySelectorAll('a');
+var i = 0;
+while(i< alist.length){
+alist[i]. style.color = 'white';
+i = i + 1;}
+}
 
-<input type="button" value="day" onclick=
-"
-document.querySelector('body').style.backgroundColor='white';
-document.querySelector('body').style.color='black';">
+else{
+target.style.backgroundColor='white';
+target.style.color='black';
+this.value ='night';
+
+var alist = document.querySelectorAll('a');
+var i = 0;
+while(i< alist.length){
+alist[i]. style.color = 'black';
+i = i + 1;}
+}
+
+">
 <body>
 <H1><a href="avengers.html"> ALL OF AVENGERS</a></H1>
 <div id="grid">
@@ -54,7 +71,7 @@ document.querySelector('body').style.color='black';">
 또한 복합적인 캐릭터이자 시리즈 사상 최악의 적인 ‘울트론’을 표현하기 위해<br>
 셰익스피어의 세계관을 차용했다.<br>
 셰익스피어의 독백에서 모티브를 가져와 ‘울트론’의 독백을 완성했고, <br>
-    왕좌를 꿈꾸는 설정을 더해 한층 매력적인 캐릭터를 만들어냈다.<br></p></div> 
+    왕좌를 꿈꾸는 설정을 더해 한층 매력적인 캐릭터를 만들어냈다.<br></p></div>
     </body>
 
 <div id="disqus_thread"></div>
